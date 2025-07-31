@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Language Inclusion Page & Accessible Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header, main, footer {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    th {
+      background: #2c3e50;
+      color: #fff;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    form {
+      margin-top: 40px;
+    }
+    fieldset {
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #2c3e50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #34495e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sign Language Inclusion & Accessible Form</h1>
+    <p>Empowering the Deaf community through clear communication, accessibility, and inclusion.</p>
+  </header>
+
+  <main>
+    <!-- ✅ Ordered List -->
+    <h2>Our Commitment to the Deaf Community</h2>
+    <ol>
+      <li>Provide professional sign language interpretation</li>
+      <li>Offer training in Kenyan Sign Language (KSL)</li>
+      <li>Partner with schools and communities</li>
+      <li>Promote inclusive events and activities</li>
+    </ol>
+
+    <!-- ✅ Unordered List -->
+    <h2>Why Choose Our Services</h2>
+    <ul>
+      <li>Certified interpreters</li>
+      <li>Flexible booking and scheduling</li>
+      <li>Community-based approach</li>
+      <li>Accessible communication for all</li>
+    </ul>
+
+    <!-- ✅ Table -->
+    <h2>Interpreter Packages</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Services Included</th>
+          <th>Rate (per hour)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>1 Certified Interpreter</td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>2 Interpreters + Coordination</td>
+          <td>$35</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>Team + Custom Support</td>
+          <td>$50</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ✅ Media -->
+    <h2>Sign Language Introduction Video</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Inclusive Team Photo</h2>
+    <img src="https://via.placeholder.com/600x300" alt="Certified sign language interpreters working with the Deaf community">
+
+    <!-- ✅ HTML5 Accessible Form -->
+    <h2>Book an Interpreter</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Client Information</legend>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your full name" required minlength="3" autocomplete="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254700123456" required pattern="^\+?\d{10,15}$">
+
+        <label for="communication">Preferred Communication Mode</label>
+        <select id="communication" name="communication" required>
+          <option value="">-- Please choose --</option>
+          <option value="sign">Kenyan Sign Language (KSL)</option>
+          <option value="voice">Voice</option>
+          <option value="text">Text/SMS</option>
+        </select>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Booking Details</legend>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="service">Service Type</label>
+        <select id="service" name="service" required>
+          <option value="">-- Please choose --</option>
+          <option value="training">Sign Language Training</option>
+          <option value="interpretation">Event Interpretation</option>
+          <option value="consulting">Consulting</option>
+        </select>
+
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" placeholder="Any special requests..." rows="4" minlength="20" required></textarea>
+
+      </fieldset>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Think Tank Sign Language | Inclusion for All</p>
+  </footer>
+</body>
+</html>
